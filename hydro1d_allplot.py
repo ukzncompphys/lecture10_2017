@@ -131,6 +131,7 @@ if __name__=='__main__':
         fluid.take_step()
         plt.clf()
         plt.plot(fluid.rho)
+        plt.ylim(0,1.1)
         plt.draw()
         fname='tmp/frame_%04d.gif' % (i)
         plt.savefig(fname)
