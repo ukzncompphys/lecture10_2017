@@ -134,3 +134,5 @@ if __name__=='__main__':
         plt.draw()
         fname='tmp/frame_%04d.gif' % (i)
         plt.savefig(fname)
+#when you have made all the frames, you can stitch them together into an animated gif with:
+#  gifsicle --optimize tmp/*.gif > fluid.gif
